@@ -12,33 +12,51 @@ import "./Team.css";
 import TeamImage from "./TeamImage";
 
 const Team = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
-  }, []);
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+        });
+    }, []);
 
-  return (
-    <div className="text-[#7A6960]">
-      <h1 data-aos="fade-right" className="text-3xl font-semibold text-center">
-        Team
-      </h1>
-      <div className="flex justify-center items-center mt-2">
-        <div className="bg-orange-600 h-1 w-16 rounded"></div>
-      </div>
-      <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-        Our Mission is clear. We are building to train over 10 Crores Career
-        Aspirants
-      </p>
+    return (
+        <div className="text-[#7A6960]">
 
-      <div className="flex flex-col xs:flex-row gap-6 p-5 lg:p-0 items-center">
-        <TeamImage image={team1} name={"Walter White"} role={"Cheif Executive Officer"} />
-        <TeamImage image={team2} name={"Sarah Jhonson"} role={"Product Manager"} />
-        <TeamImage image={team3} name={"William Anderson"} role={"CTO"} />
-        <TeamImage image={team4} name={"Amanda Jepson"} role={"Accountant"} />
-      </div>
-    </div>
-  );
+            {/* <h1 data-aos="fade-right" className=" text-gray-900 text-3xl font-semibold text-center"> */}
+            <h1 className=" text-gray-900 text-3xl font-semibold text-center">
+                Team
+            </h1>
+
+            <div className="flex justify-center items-center mt-2">
+                <div className="bg-blue-400 h-1 w-16 rounded"></div>
+            </div>
+
+            <p className="text-gray-700 text-center mt-7 mb-10 text-lg px-4 leading-relaxed">
+                Meet the innovators behind Digital Degens - a team of creators, strategists, and marketers dedicated to driving your brand's success in the digital world.
+            </p>
+
+
+
+
+            <div className="flex flex-col justify-center xs:flex-row gap-6 p-5 lg:p-0 items-center">
+                <TeamImage image={team1} name={"Tashreen Sidhu"} role={"Partner"} />
+                <TeamImage image={team2} name={"Balreen Sidhu"} role={"Partner"} />
+                <TeamImage image={team3} name={"Surjit Sidhu"} role={"Partner"} />
+
+
+            </div>
+
+            <div className="pb-5"></div>
+
+            <div className="flex flex-col justify-center xs:flex-row gap-6 p-5 lg:p-0 items-center">
+                <TeamImage image={team1} name={"Prajjwal Raj Shrestha"} role={"Photography Director"} />
+                <TeamImage image={team2} name={"Nurshaiza Shazlin"} role={"Associate"} />
+                <TeamImage image={team3} name={"Syarifah Nurnajirah"} role={"Associate"} />
+
+
+            </div>
+
+        </div>
+    );
 };
 
 export default Team;
