@@ -5,8 +5,11 @@ import Routings from "../utils/Routings";
 
 const App = () => {
   return (
-    <div>
-      <Routings />
+    //<div>
+    //  <Routings />
+    //  </div>
+      <div>
+      <h1>Static Test Content</h1>
     </div>
   );
 };
