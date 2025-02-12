@@ -12,123 +12,208 @@ import "aos/dist/aos.css";
 import video from "../img/video/funny.mp4";
 
 const About = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1200,
+    useEffect(() => {
+        AOS.init({
+            duration: 1200,
+        });
     });
-  });
 
-  const [show, setShow] = useState(false);
+    const [show, setShow] = useState(false);
 
-  const videoStartHandler = () => {
-    const video = document.querySelector("#video");
-    video.currentTime = 0;
-    video.load();
-    setShow(true);
-  };
+    const videoStartHandler = () => {
+        const video = document.querySelector("#video");
+        video.currentTime = 0;
+        video.load();
+        setShow(true);
+    };
 
-  const clickHandler = () => {
-    const video = document.querySelector("#video");
-    video.pause();
-    setShow(false);
-  };
+    const clickHandler = () => {
+        const video = document.querySelector("#video");
+        video.pause();
+        setShow(false);
+    };
 
-  return (
-    <div className="relative lg:mx-32">
-      <h1
-        data-aos="fade-down"
-        className="text-3xl font-semibold text-center text-[#7A6960]"
-      >
-        About Us
-      </h1>
-      <div className="flex justify-center items-center mt-2 mb-10">
-        <div className="bg-orange-600 h-1 w-16 rounded"></div>
-      </div>
+    return (
+        <div className="relative lg:mx-32">
+            <h1
+                // className="text-3xl font-semibold text-center text-[#7A6960]"
 
-      <div className="flex flex-col lg:flex-row items-center lg:gap-10 secondary-font">
-        <div
-          data-aos="fade-up"
-          className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0"
-        >
-          <img className="w-full" src={img} alt="img" />
-        </div>
-        <div className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0">
-          <div data-aos="fade-left">
-            <h1 className="text-[#7A6960] md:text-3xl font-semibold">
-              Upskilling Edtech
+                className="heading-style "
+            >
+                About Us
             </h1>
-            <p className="text-lg mt-5 text-gray-600 primary-font">
+
+            {/* <div className="flex justify-center items-center mt-2 mb-10">
+        <div className="bg-orange-600 h-1 w-16 rounded"></div>
+      </div> */}
+
+            <div className="flex justify-center items-center mt-2 mb-10">
+                <div className="bg-blue-400 h-1 w-16 rounded"></div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-center lg:gap-10 secondary-font">
+
+                {/* First Image */}
+                <div
+                    data-aos="fade-up"
+                    className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0"
+                >
+                    <img className="w-full" src={img} alt="img" />
+                </div>
+
+
+                <div className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0">
+                    <div data-aos="fade-left">
+
+                        <h1 className="text-gray-700 md:text-3xl font-semibold">
+                            Empowering Businesses to Thrive Online
+                        </h1>
+
+                        {/* <p className="text-lg mt-5 text-gray-600 primary-font">
               Edtech platform offering expert mentorship with our tech-powered
               courses in various languages of India.
-            </p>
-          </div>
+            </p> */}
 
-          {/* 1st template */}
-          <div
-            data-aos="zoom-in"
-            className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
-          >
-            <div
-              className="bg-orange-600 w-fit p-2 md:p-5 rounded"
-              style={{ color: "white" }}
-            >
-              <BsPeople size={"28px"} />
-            </div>
-            <div className="w-full">
-              <h2 className="text-[#7A6960] text-xl font-medium">
-                The Vernacular Upskilling Edtech
-              </h2>
-              <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
-                Explore Our Courses | Bharat ka Career Launchpad
-              </p>
-            </div>
-          </div>
+                        <p className="text-lg mt-5 text-gray-600 primary-font text-justify">
+                            Digital Degens is a full-service digital marketing agency and e-commerce consultancy and training firm.
+                            We specialize in content creation, paid ads, social media growth, and optimized e-commerce strategies. With tailored solutions and expert-led training, we help brands scale, engage, and thrive in the digital space.
+                        </p>
 
-          {/* 2nd template */}
-          <div
-            data-aos="zoom-in"
-            className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
-          >
-            <div
-              className="bg-orange-600 w-fit p-2 md:p-5 rounded"
-              style={{ color: "white" }}
-            >
-              <BsPeople size={"28px"} />
-            </div>
-            <div className="w-full">
-              <h2 className="text-[#7A6960] text-xl font-medium">
-                Build Your Career, Your Way
-              </h2>
-              <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
-                Our Learners Work at Global Companies & Startups
-              </p>
-            </div>
-          </div>
 
-          {/* para */}
-          <p
+
+
+                    </div>
+
+                    {/* 1st template */}
+                    <div
+                        data-aos="zoom-in"
+                        className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
+                    >
+                        <div
+                            className="bg-blue-400 w-fit p-2 md:p-5 rounded"
+                            style={{ color: "white" }}
+                        >
+                            <BsPeople size={"28px"} />
+                        </div>
+                        <div className="w-full">
+                            <h2 className="text-gray-700 text-xl font-medium">
+                                Data-Driven Marketing Strategies
+
+                            </h2>
+                            <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
+                                We leverage analytics, trends, and creativity to craft high-converting campaigns.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    {/* 2nd template */}
+                    <div
+                        data-aos="zoom-in"
+                        className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
+                    >
+                        <div
+                            className="bg-blue-400 w-fit p-2 md:p-5 rounded"
+                            style={{ color: "white" }}
+                        >
+                            <BsPeople size={"28px"} />
+                        </div>
+                        <div className="w-full">
+                            <h2 className="text-gray-700 text-xl font-medium">
+                                Content That Captivates
+                            </h2>
+                            <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
+                                From viral videos to engaging social media posts, we create content that drives action.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 3rd template */}
+                    <div
+                        data-aos="zoom-in"
+                        className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
+                    >
+                        <div
+                            className="bg-blue-400 w-fit p-2 md:p-5 rounded"
+                            style={{ color: "white" }}
+                        >
+                            <BsPeople size={"28px"} />
+                        </div>
+                        <div className="w-full">
+                            <h2 className="text-gray-700 text-xl font-medium">
+                                E-Commerce Growth Specialists
+                            </h2>
+                            <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
+                                We help brands establish, optimize, and scale their online stores for maximum profitability.              </p>
+                        </div>
+                    </div>
+
+                    {/* 4th template */}
+                    <div
+                        data-aos="zoom-in"
+                        className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
+                    >
+                        <div
+                            className="bg-blue-400 w-fit p-2 md:p-5 rounded"
+                            style={{ color: "white" }}
+                        >
+                            <BsPeople size={"28px"} />
+                        </div>
+                        <div className="w-full">
+                            <h2 className="text-gray-700 text-xl font-medium">
+                                Training & E-Commerce Consultancy
+                            </h2>
+                            <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
+                                Expert advice and practical training to enhance digital marketing knowledge and e-commerce success.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 5th template */}
+                    <div
+                        data-aos="zoom-in"
+                        className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
+                    >
+                        <div
+                            className="bg-blue-400 w-fit p-2 md:p-5 rounded"
+                            style={{ color: "white" }}
+                        >
+                            <BsPeople size={"28px"} />
+                        </div>
+                        <div className="w-full">
+                            <h2 className="text-gray-700 text-xl font-medium">
+                                Performance-Driven Ad Campaigns
+                            </h2>
+                            <p className="text-base text-gray-600 primary-font lg:mt-1 mt-2">
+                                Our targeted ad strategies ensure maximum ROI and audience engagement.              </p>
+                        </div>
+                    </div>
+
+                    {/* para */}
+                    {/* <p
             data-aos="zoom-in"
             className="text-lg mt-5 text-gray-600 primary-font"
           >
             Master industry-relevant skills with our vernacular online courses.
             Choose your program, get certified, and open doors to lucrative
             career opportunities.
-          </p>
-          <div className="flex flex-col justify-center sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
-            <div>
-              <a href="/Marketing-Website/#contact" className="">
-                <CtaButton name={"Get Started"} />
-              </a>
-            </div>
-            {/* <div
+          </p> */}
+
+                    <div className="flex flex-col justify-center sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
+                        <div>
+                            <a href="/Marketing-Website/#contact" className="">
+                                <CtaButton name={"Get Started"} />
+                            </a>
+                        </div>
+                        {/* <div
               onClick={() => videoStartHandler()}
               className="shadow shadow-zinc-300 hover:shadow-orange-600 hover:shadow px-4 py-2 rounded-3xl"
             >
               <VideoBtn name={"Watch Video"} />
             </div> */}
-          </div>
+                    </div>
 
-          {/* <div
+                    {/* <div
             className={`${
               show ? "block" : "hidden"
             } absolute right-0 top-0 lg:w-full lg:h-full bg-zinc-500 bg-opacity-50 rounded overflow-hidden flex justify-center items-center shadow-2xl lg:mb-20 transition-all duration-300`}
@@ -148,10 +233,10 @@ const About = () => {
               src={video}
             ></video>
           </div> */}
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default About;

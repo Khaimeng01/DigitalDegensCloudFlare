@@ -8,51 +8,62 @@
 /* Important */
 
 :root {
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Poppins", sans-serif;
+    --primary-font: "Open Sans", sans-serif;
+    --secondary-font: "Poppins", sans-serif;
 }
 
 .primary-font {
-  font-family: var(--primary-font);
+    font-family: var(--primary-font);
 }
 
 .secondary-font {
-  font-family: var(--secondary-font);
+    font-family: var(--secondary-font);
 }
 
 /* Custom Scrollbar */
 
 body::-webkit-scrollbar {
-  width: 8px;
+    width: 8px;
 }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #EA580C;
-  border-radius: 10px;
+    /* background-color: #EA580C; */
+    background-color: #60A5FA; /* Light blue */
+    border-radius: 10px;
 }
 
 /* custom arrow */
 
 .arrow:before {
-  content: "👉";
-  padding-right: 5px;
+    content: "👉";
+    padding-right: 5px;
 }
 
-.myLink{
-  position: relative;
+.myLink {
+    position: relative;
 }
 
-.link{
-  display: none;
+.link {
+    display: none;
 }
 
-.myLink:hover > .link{
-  display: block;
-  position: absolute;
-  left: 45%;
-  top: 45%;
+.myLink:hover > .link {
+    display: block;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+/* Heading Style */
+.heading-style {
+    @apply text-gray-900 text-3xl font-semibold text-center;
+}
+
+/* Title Underline */
+.titleUnderline {
+    @apply bg-blue-400 h-1 w-16 rounded;
 }
