@@ -83,7 +83,9 @@ const Services = () => {
             {/* Content */}
 
                 {/* <div onClick={() => navigate("/app-development")}> */}
-                <div style={{ maxWidth: "383px" }}>
+                {/*<div style={{ maxWidth: "383px" }}>*/}
+                <div className="w-full sm:max-w-[383px]">
+
                     <Card
                         img={<HiOutlineChartPie />}
                         title={"Web Design & Development"}
