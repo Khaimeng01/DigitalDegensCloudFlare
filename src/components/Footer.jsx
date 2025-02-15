@@ -20,7 +20,7 @@ const Footer = () => {
     return (
         <div className="md:grid grid-cols-4 p-5 md:p-0">
             <div data-aos="fade-right" className="pr-1" >
-                <h1 className="text-xl font-light mb-3">Digital Degens</h1>
+                <h1 className=" text-gray-700 text-xl  mb-3">Digital Degens</h1>
                 <p className="mb-1">One Ampang Avenue,</p>
                 <p className="mb-5">Ampang, Selangor</p>
 
@@ -36,7 +36,7 @@ const Footer = () => {
 
             {/* Useful links */}
             <div data-aos="fade-right" data-aos-delay="300" className="mt-10 md:mt-0 pl-5" >
-                <h1 className="text-[#7A6960] font-medium text-lg mb-2">
+                <h1 className="text-gray-700 font-medium text-lg mb-2">
                     Useful Links
                 </h1>
                 <ul>
@@ -46,18 +46,18 @@ const Footer = () => {
                         </a>
                     </li>
                     <li className="mb-2 arrow">
-                        <a href="#" className="text-zinc-700">
+                        <a href="/#about" className="text-zinc-700">
                             About Us
                         </a>
                     </li>
                     <li className="mb-2 arrow">
-                        <a href="#" className="text-zinc-700">
+                        <a href="/#services" className="text-zinc-700">
                             Service
                         </a>
                     </li>
                     <li className="mb-2 arrow">
-                        <a href="#" className="text-zinc-700">
-                            Terms Of Service
+                        <a href="/#portfolio" className="text-zinc-700">
+                            Portfolio
                         </a>
                     </li>
                 </ul>
@@ -65,41 +65,37 @@ const Footer = () => {
 
             {/* Our Services */}
             <div data-aos="fade-right" data-aos-delay="500" className="mt-10 md:mt-0">
-                <h1 className="text-[#7A6960] font-medium text-lg mb-2">
+                <h1 className="text-gray-700 font-medium text-lg mb-2">
                     Our Services
                 </h1>
                 <ul>
                     <li className="mb-2 arrow">
-                        <Link to="/app-development" className="text-zinc-700">
-                            App Development
+                        <Link  className="text-zinc-700">
+                            Social Media Management
                         </Link>
                     </li>
                     <li className="mb-2 arrow">
-                        <Link to="/web-development" className="text-zinc-700">
-                            Web Development
+                        <Link  className="text-zinc-700">
+                            E-Commerce Training & Consultancy
                         </Link>
                     </li>
                     <li className="mb-2 arrow">
-                        <Link to="/seo-optimization" className="text-zinc-700">
-                            SEO Optimization
+                        <Link  className="text-zinc-700">
+                            Content Creation
                         </Link>
                     </li>
                     <li className="mb-2 arrow">
-                        <Link to="/campagin-creation" className="text-zinc-700">
-                            Campagin Creation
+                        <Link  className="text-zinc-700">
+                            Web Design & Development
                         </Link>
                     </li>
-                    <li className="mb-2 arrow">
-                        <Link to="/hireus" className="text-zinc-700">
-                            Hire Us
-                        </Link>
-                    </li>
+                    
                 </ul>
             </div>
 
             {/* Follow Us */}
             <div data-aos="fade-right" data-aos-delay="700" className="mt-10 md:mt-0">
-                <h1 className="text-[#7A6960] font-medium text-lg mb-2">Follow Us</h1>
+                <h1 className="text-gray-700 font-medium text-lg mb-2">Follow Us</h1>
                 <p className="text-sm">
                     Cras fermentum odio eu feugiat lide par naso tierra videa magna derita
                     valies

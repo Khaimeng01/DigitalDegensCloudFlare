@@ -45,18 +45,18 @@ const Services = () => {
                 className="flex flex-col lg:flex-row items-center gap-5"
             >
                 {/* <div onClick={() => navigate("/app-development")}> */}
-                <div style={{ maxWidth: "500px", minHeight: '372px' }}>
+                <div style={{ maxWidth: "500px" }}>
 
                     <Card
                         img={<HiOutlineChartPie />}
                         title={"Social Media Management"}
                         desc={
-                            "We handle your brand’s social media presence, creating strategies that boost engagement, increase followers, and drive real results."
+                            "We handle your brand's social media presence, creating strategies that boost engagement, increase followers, and drive real results."
                         }
                     />
                 </div>
 
-                <div style={{ maxWidth: "500px", minHeight: '372px' }}>
+                <div style={{ maxWidth: "500px" }}>
                     <Card
                         img={<HiOutlineChartPie />}
                         title={"E-Commerce Training & Consultancy"}
@@ -79,34 +79,19 @@ const Services = () => {
 
             </div>
 
-            <div
-                // className="flex flex-col lg:flex-row items-center gap-5"
-                className="flex flex-col lg:flex-row lg:pt-3   items-center justify-center gap-5 flex-wrap"
-            // className="flex flex-col lg:flex-row items-center gap-5 pt-3"
+            <div className="flex flex-col lg:flex-row pt-5 lg:pt-3 items-center flex-wrap">
+            {/* Content */}
 
-
-            >
                 {/* <div onClick={() => navigate("/app-development")}> */}
-                <div style={{ maxWidth: "500px" }}>
+                <div style={{ maxWidth: "383px" }}>
                     <Card
                         img={<HiOutlineChartPie />}
                         title={"Web Design & Development"}
                         desc={
-                            "We create visually stunning, high-converting websites that align with your brand’s identity. Whether it's an e-commerce store, business website, or landing page, we ensure seamless user experience and functionality to drive growth"
+                            "We create visually stunning, high-converting websites that align with your brand's identity. Whether it's an e-commerce store, business website, or landing page, we ensure seamless user experience and functionality to drive growth"
                         }
                     />
                 </div>
-
-                {/* <div style={{ maxWidth: "500px" }}>
-
-          <Card
-            img={<HiOutlineChartPie />}
-            title={"Web Development"}
-            desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
-            }
-          />
-        </div> */}
 
 
             </div>
