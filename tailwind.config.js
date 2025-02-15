@@ -10,7 +10,7 @@ export default {
         "bootFont": ["bootFont"]
       },
       screens:{
-        "xs": "425px",
+        "xs": "450px",
       }
     },
   },
