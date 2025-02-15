@@ -91,7 +91,7 @@ const NavBar = () => {
 
       {/* mobile menu */}
       <div className="lg:hidden ">
-        <RxHamburgerMenu size={"28px"} onClick={clickHandler} />
+              <RxHamburgerMenu size={"28px"} onClick={clickHandler} className="text-white pl-2" />
       </div>
 
       {show && (
