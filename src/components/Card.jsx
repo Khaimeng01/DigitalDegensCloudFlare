@@ -8,7 +8,7 @@ const Card = ({ title, desc, img}) => {
 >
           <div style={{ color: "#60A5FA", fontSize: "36px" }}>{img}</div>
 
-          <h1 className="lg:text-xl text-lg font-semibold text-gray-700 mt-3 mb-5 min-h-[56px]">{title}</h1>
+          <h1 className="lg:text-xl text-lg font-semibold text-gray-700 mt-3 mb-5 lg:min-h-[56px]">{title}</h1>
           <p className="lg:text-[0.9rem] text-[0.8rem] text-zinc-700 leading-loose text-justify">{desc}</p>
 
       </div>

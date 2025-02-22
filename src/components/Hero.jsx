@@ -3,7 +3,8 @@ import { gsap } from "gsap";
 import CtaButton from "./CtaButton";
 import VideoBtn from "./VideoBtn";
 import img from "../img/hero-img.svg";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+
 
 // aos
 import AOS from "aos";
@@ -61,11 +62,20 @@ const Hero = () => {
                 <div className="flex flex-col sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
 
 
-                    {/* Instagram Button */}
+                    
 
-                    <a href="https://www.instagram.com/digital_degens?igsh=MTZ0bmR1YTZ2Y3hheg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
-                        <CtaButton name={"Get Started"} />
-                    </a>
+                    {/*<a href="https://www.instagram.com/digital_degens?igsh=MTZ0bmR1YTZ2Y3hheg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">*/}
+                    {/*    <CtaButton name={"Get Started"} />*/}
+                    {/*</a>*/}
+
+                    {/* Instagram Button */}
+                    <button
+                        className="flex items-center gap-2 bg-[#C13584] text-white hover:bg-[#a32769] hover:shadow hover:shadow-[#a32769] text-lg rounded-3xl px-4 py-2 transition-all duration-300"
+                        onClick={() => window.open("https://www.instagram.com/digital_degens", "_blank")}
+                    >
+                        <FaInstagram size={20} />
+                        Instagram
+                    </button>
 
                     {/* Whatsapp Button */}
                     <button

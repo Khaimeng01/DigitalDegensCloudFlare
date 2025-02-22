@@ -3,6 +3,7 @@ import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io";
+import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -18,7 +19,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className="md:grid grid-cols-4 p-5 md:p-0">
+        <div className="md:grid grid-cols-4 p-5 md:p-0  gap-4">
             <div data-aos="fade-right" className="pr-1" >
                 <h1 className=" text-gray-700 text-xl  mb-3">Digital Degens</h1>
                 <p className="mb-1">One Ampang Avenue,</p>
@@ -35,7 +36,7 @@ const Footer = () => {
             </div>
 
             {/* Useful links */}
-            <div data-aos="fade-right" data-aos-delay="300" className="mt-10 md:mt-0 pl-5" >
+            <div data-aos="fade-right" data-aos-delay="300" className="mt-10 md:mt-0 " >
                 <h1 className="text-gray-700 font-medium text-lg mb-2">
                     Useful Links
                 </h1>
@@ -96,26 +97,47 @@ const Footer = () => {
             {/* Follow Us */}
             <div data-aos="fade-right" data-aos-delay="700" className="mt-10 md:mt-0">
                 <h1 className="text-gray-700 font-medium text-lg mb-2">Follow Us</h1>
-                <p className="text-sm">
-                    Cras fermentum odio eu feugiat lide par naso tierra videa magna derita
-                    valies
-                </p>
+                {/*<p className="text-sm">*/}
+                {/*    Cras fermentum odio eu feugiat lide par naso tierra videa magna derita*/}
+                {/*    valies*/}
+                {/*</p>*/}
                 <div className="flex justify-between pr-5 mt-5">
-                    <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
-                        <IoLogoTwitter size={"26px"} />
-                    </div>
+                    {/*<div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">*/}
+                    {/*    <IoLogoTwitter size={"26px"} />*/}
+                    {/*</div>*/}
 
-                    <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
-                        <IoLogoFacebook size={"26px"} />
-                    </div>
+                    {/*<div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">*/}
+                    {/*    <IoLogoFacebook size={"26px"} />*/}
+                    {/*</div>*/}
 
-                    <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
+                    {/*<div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">*/}
+                    {/*    <IoLogoLinkedin size={"26px"} />*/}
+                    {/*</div>*/}
+
+                    <div
+                        className="border border-zinc-400 p-2 rounded-full hover:border-[#C13584] hover:text-[#C13584] cursor-pointer"
+                        onClick={() => window.open("https://www.instagram.com/digital_degens", "_blank")}
+                    >
                         <IoLogoInstagram size={"26px"} />
                     </div>
 
-                    <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
-                        <IoLogoLinkedin size={"26px"} />
+
+
+                    <div
+                        className="border border-zinc-400 p-2 rounded-full hover:border-green-600 hover:text-green-600 cursor-pointer"
+                        onClick={() => window.open("https://wa.link/ydw72i", "_blank")}
+                    >
+                        <FaWhatsapp size={"26px"} />
                     </div>
+
+
+                    <div
+                        className="border border-zinc-400 p-2 rounded-full hover:border-blue-600 hover:text-blue-600 cursor-pointer"
+                        onClick={() => window.location.href = "/#contact"}
+                    >
+                        <FaEnvelope size={"26px"} />
+                    </div>
+
                 </div>
             </div>
         </div>

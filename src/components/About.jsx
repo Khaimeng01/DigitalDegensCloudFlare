@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import CtaButton from "./CtaButton";
 import VideoBtn from "./VideoBtn";
 import img from "../img/about-img.svg";
+import img2 from "../img/Subscriptions-amico.svg";
+
 import { BsPeople } from "react-icons/bs";
 
 // aos
@@ -58,7 +60,7 @@ const About = () => {
                     data-aos="fade-up"
                     className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0"
                 >
-                    <img className="w-full" src={img} alt="img" />
+                    <img className="w-full" src={img2} alt="img" />
                 </div>
 
 
