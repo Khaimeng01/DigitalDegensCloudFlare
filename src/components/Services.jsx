@@ -32,7 +32,7 @@ const Services = () => {
                 <div className="bg-blue-400 h-1 w-16 rounded"></div>
             </div>
 
-            <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
+            <p className="text-gray-700 text-center mt-7 mb-10 text-lg px-4">
                 We help businesses scale, engage, and convert through expert social media management, high-impact content creation, and e-commerce training & consultancy.
             </p>
 

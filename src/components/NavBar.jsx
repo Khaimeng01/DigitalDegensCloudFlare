@@ -84,7 +84,7 @@ const NavBar = () => {
         {/* <button className="bg-orange-600 text-lg text-slate-50 rounded-3xl px-4 py-1">
           Get Strated
         </button> */}
-        <a href="/Marketing-Website/#contact" className="">
+        <a href="/#contact" className="">
           <CtaButton name={"Get Started"} />
         </a>
       </div>
