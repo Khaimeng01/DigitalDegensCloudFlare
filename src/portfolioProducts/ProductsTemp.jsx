@@ -46,7 +46,7 @@ const Appproducts = ({ img,title,subtitle }) => {
   date =
     date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
-    const photoImages = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10 ];
+    const photoImages = [photo1,photo3, photo2, photo4, photo5, photo6, photo7, photo8, photo9, photo10 ];
 
     let images = [];
 
@@ -67,67 +67,56 @@ const Appproducts = ({ img,title,subtitle }) => {
       <section
         id="about"
         className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100"
-      >
-        <div className="flex md:flex-row flex-col items-start justify-center gap-10">
+          >
+
+              <div className="md:hidden flex flex-col gap-10 p-5 md:p-0">
+                  <div>
+                      <h1 className="text-3xl font-semibold text-gray-900">
+                          {title}
+                      </h1>
+                      <p className="mt-5 text-gray-600">
+                          {subtitle}
+                      </p>
+                  </div>
+              </div>
+
+              <div className="flex flex-col md:flex-row items-start justify-center gap-10">
+
+                  {/* Images Grid */}
                   <div className="md:w-2/3 w-full p-5 md:p-0 flex justify-center items-center">
-                      <Swiper
-                          modules={[Pagination, Autoplay, Navigation]}
-                          spaceBetween={10}
-                          slidesPerView={1}
-                          pagination={{ clickable: true }}
-                          autoplay={{ delay: 4000 }}
-                          navigation={false}
-                          className="rounded-lg overflow-hidden shadow-xl "
-                      >
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                           {images.map((imageSrc, index) => (
-                              <SwiperSlide key={index} className="flex justify-center items-center">
-                                  <img
-                                      src={imageSrc}
-                                      alt={`slide-${index}`}
-                                      //className="object-cover w-fit h-[fit] md:h-[400]"
-                                      className="object-contain w-full h-[350px] py-1"
-                                  />
-                              </SwiperSlide>
+                              <img
+                                  key={index}
+                                  src={imageSrc}
+                                  className="object-cover w-full h-full rounded cursor-pointer"
+                                  alt={`photo-${index}`}
+                              />
                           ))}
-                      </Swiper>
-                </div>
-          <div className="md:w-1/3 flex flex-col gap-10 p-5 md:p-0">
-            {/*<div className="shadow-xl border-2 p-8">*/}
-            {/*  <h1 className="text-3xl font-semibold text-[#7A6960]">*/}
-            {/*    Project Information*/}
-            {/*  </h1>*/}
-            {/*  <div className="h-[1px] mt-3 bg-slate-200"></div>*/}
-            {/*  <ul className="mt-3">*/}
-            {/*    <li>*/}
-            {/*      <span className="font-semibold ">Category:</span> Software*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*      <span className="font-semibold ">Client:</span> USA*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*      <span className="font-semibold ">Project Date:</span> {date}*/}
-            {/*    </li>*/}
-            {/*    <li>*/}
-            {/*      <span className="font-semibold ">Project Url:</span>{" "}*/}
-            {/*      <span className="text-orange-600">www.example.com</span>*/}
-            {/*    </li>*/}
-            {/*  </ul>*/}
-            {/*</div>*/}
-            <div>
-                          <h1 className="text-3xl font-semibold text-gray-900">
-                              {title}
-              </h1>
-                          <p className="mt-5 text-gray-600">
-                              {subtitle}
-              </p>
-            </div>
-            <div className="flex items-center justify-center mt-3">
-              <Link to="/#contact" className="">
-                <CtaButton name={"Hire Us"} />
-              </Link>
-            </div>
-          </div>
-        </div>
+                      </div>
+                  </div>
+
+                  {/* Desktop Content Div (shown on desktop only) */}
+                  <div className="hidden md:flex md:w-1/3 flex-col gap-10 p-5 md:p-0">
+                      <div>
+                          <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
+                          <p className="mt-5 text-gray-600">{subtitle}</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="hidden md:flex flex-col gap-10 p-5 md:p-0">
+                  <div>
+                      <h1 className="text-3xl font-semibold text-gray-900">
+                          {title}
+                      </h1>
+                      <p className="mt-5 text-gray-600">
+                          {subtitle}
+                      </p>
+                  </div>
+              </div>
+
+
       </section>
 
       {/* Newletter & Footer */}
@@ -140,3 +129,65 @@ const Appproducts = ({ img,title,subtitle }) => {
 };
 
 export default Appproducts;
+
+
+{/*<Swiper*/ }
+{/*    modules={[Pagination, Autoplay, Navigation]}*/ }
+{/*    spaceBetween={10}*/ }
+{/*    slidesPerView={1}*/ }
+{/*    pagination={{ clickable: true }}*/ }
+{/*    autoplay={{ delay: 4000 }}*/ }
+{/*    navigation={false}*/ }
+{/*    className="rounded-lg overflow-hidden shadow-xl "*/ }
+{/*>*/ }
+{/*    {images.map((imageSrc, index) => (*/ }
+{/*        <SwiperSlide key={index} className="flex justify-center items-center">*/ }
+{/*            <img*/ }
+{/*                src={imageSrc}*/ }
+{/*                alt={`slide-${index}`}*/ }
+{/*                //className="object-cover w-fit h-[fit] md:h-[400]"*/ }
+{/*                className="object-contain w-full h-[350px] lg:h-[500px] py-1"*/ }
+{/*            />*/ }
+{/*        </SwiperSlide>*/ }
+{/*    ))}*/ }
+{/*</Swiper>*/ }
+
+
+{/*                <div className="md:w-1/3 flex flex-col gap-10 p-5 md:p-0">*/ }
+{/*<div className="shadow-xl border-2 p-8">*/ }
+{/*  <h1 className="text-3xl font-semibold text-[#7A6960]">*/ }
+{/*    Project Information*/ }
+{/*  </h1>*/ }
+{/*  <div className="h-[1px] mt-3 bg-slate-200"></div>*/ }
+{/*  <ul className="mt-3">*/ }
+{/*    <li>*/ }
+{/*      <span className="font-semibold ">Category:</span> Software*/ }
+{/*    </li>*/ }
+{/*    <li>*/ }
+{/*      <span className="font-semibold ">Client:</span> USA*/ }
+{/*    </li>*/ }
+{/*    <li>*/ }
+{/*      <span className="font-semibold ">Project Date:</span> {date}*/ }
+{/*    </li>*/ }
+{/*    <li>*/ }
+{/*      <span className="font-semibold ">Project Url:</span>{" "}*/ }
+{/*      <span className="text-orange-600">www.example.com</span>*/ }
+{/*    </li>*/ }
+{/*  </ul>*/ }
+{/*</div>*/ }
+{/*<div>*/ }
+{/*              <h1 className="text-3xl font-semibold text-gray-900">*/ }
+{/*                  {title}*/ }
+{/*  </h1>*/ }
+{/*              <p className="mt-5 text-gray-600">*/ }
+{/*                  {subtitle}*/ }
+{/*  </p>*/ }
+{/*          </div>*/ }
+
+
+{/*<div className="flex items-center justify-center mt-3">*/ }
+{/*  <Link to="/#contact" className="">*/ }
+{/*    <CtaButton name={"Hire Us"} />*/ }
+{/*  </Link>*/ }
+{/*</div>*/ }
+{/*          </div>*/ }
