@@ -47,14 +47,14 @@ const Portfolio = () => {
         {/* 1st row */}
         <div data-aos="fade-right" className="flex flex-col md:flex-row lg:-gap-6 gap-3">
                   <div onClick={() => navigate("portfolio/photography")}>
-                      <PortfolioProduct image={photoShootIcon} title={'Photography'} />
+                      <PortfolioProduct image={app1} title={'Photography'} />
           </div>
 
-                  <div onClick={() => navigate("portfolio/product1")}>
+                  <div onClick={() => navigate("portfolio/SocialMediaCreatives")}>
                       <PortfolioProduct image={SocialIcon} title={'Social Media Creatives'} />
           </div>
 
-                  <div onClick={() => navigate("portfolio/brand1")}>
+                  <div onClick={() => navigate("portfolio/Videos")}>
                       <PortfolioProduct image={VideosIcon} title={'Videos'} />
           </div>
         </div>
