@@ -33,7 +33,7 @@ const NavBar = () => {
       </a> */}
 
 <a
-  href="/Marketing-Website/"
+              href="/"
   className="flex items-center lg:text-3xl text-2xl tracking-wide font-light text-white"
 >
   <img 
@@ -113,7 +113,7 @@ const NavBar = () => {
             About
           </a>
           <a
-            href="/Marketing-Website/#services"
+                      href="/#services"
             className="text-white hover:text-blue-400 text-lg tracking-wide font-light"
             >
             Services

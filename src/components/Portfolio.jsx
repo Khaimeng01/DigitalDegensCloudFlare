@@ -46,7 +46,7 @@ const Portfolio = () => {
       <div className="flex flex-col justify-center items-center lg:-gap-6 gap-3 p-5 mb-10">
         {/* 1st row */}
         <div data-aos="fade-right" className="flex flex-col md:flex-row lg:-gap-6 gap-3">
-                  <div onClick={() => navigate("portfolio/app1")}>
+                  <div onClick={() => navigate("portfolio/photography")}>
                       <PortfolioProduct image={photoShootIcon} title={'Photography'} />
           </div>
 

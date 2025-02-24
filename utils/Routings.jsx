@@ -18,6 +18,8 @@ import book3 from "../src/img/portfolio/books-3.jpg";
 import Hireus from "../src/services/Hireus";
 
 const Routings = () => {
+
+    const subTitle1 = "A picture speaks a thousand words, and we make sure yours tell the right story. Whether it's event or product photography, food styling, corporate branding, or lifestyle shots, our high-quality images bring your brand to life and leave a lasting impression.";
     return (
         <div>
             <Routes>
@@ -32,7 +34,7 @@ const Routings = () => {
 
                 {/* Portfolio Nested Routes */}
                 <Route path="/portfolio">
-                    <Route path="app1" element={<ProductsTemp img={app1} />} />
+                    <Route path="photography" element={<ProductsTemp img={app1} title={'Photography'} subtitle={subTitle1} />} />
                     <Route path="product1" element={<ProductsTemp img={product1} />} />
                     <Route path="brand1" element={<ProductsTemp img={branding1} />} />
                     <Route path="book1" element={<ProductsTemp img={book1} />} />

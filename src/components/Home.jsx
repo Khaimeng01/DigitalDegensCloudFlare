@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom'; // <-- Add this
 import NavBar from './NavBar'
 import Hero from './Hero'
 import About from './About'
@@ -11,7 +12,21 @@ import Contact from './Contact'
 import Newsletter from './Newsletter'
 import Footer from './Footer'
 
+
 const Home = () => {
+    const { hash } = useLocation(); // <-- Add this
+
+    useEffect(() => { // <-- Add this entire useEffect block
+        if (hash) {
+            const element = document.getElementById(hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, [hash]);
+
     return (
         <div className="container min-w-full min-h-lvh secondary-font">
             <NavBar />
