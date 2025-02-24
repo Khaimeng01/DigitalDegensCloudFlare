@@ -85,7 +85,7 @@ const Appproducts = ({ img,title,subtitle }) => {
                                       src={imageSrc}
                                       alt={`slide-${index}`}
                                       //className="object-cover w-fit h-[fit] md:h-[400]"
-                                      className="object-contain w-full h-[500px] py-1"
+                                      className="object-contain w-full h-[350px] py-1"
                                   />
                               </SwiperSlide>
                           ))}
