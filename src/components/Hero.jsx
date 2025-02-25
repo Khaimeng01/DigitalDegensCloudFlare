@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import CtaButton from "./CtaButton";
 import VideoBtn from "./VideoBtn";
-import img from "../img/hero-img.svg";
+import img from "../img/Test3.png";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 
@@ -46,7 +46,7 @@ const Hero = () => {
     // };
 
     return (
-        <div className="flex flex-col-reverse lg:flex-row items-center lg:gap-10 secondary-font relative">
+        <div className="flex flex-col-reverse lg:flex-row items-center lg:gap-10 secondary-font relative ">
             <div
                 data-aos="fade-right"
                 data-aos-duration="1200"

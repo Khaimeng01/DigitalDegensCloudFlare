@@ -28,6 +28,19 @@ import photo8 from "../img/portfolio/Photo8.jpeg";
 import photo9 from "../img/portfolio/Photo9.jpeg";
 import photo10 from "../img/portfolio/Photo10.jpeg";
 
+//Social Imports
+import social1 from "../img/portfolio/Social1.jpeg";
+
+//dELTETE
+import social2 from "../img/portfolio/Social2.jpeg";
+import social3 from "../img/portfolio/Social3.jpeg";
+//dELETE
+import social4 from "../img/portfolio/Social4.jpeg";
+
+import social5 from "../img/portfolio/Social5.jpeg";
+import social6 from "../img/portfolio/Social6.jpeg";
+import social7 from "../img/portfolio/Social7.jpeg";
+
 
 
 
@@ -46,16 +59,20 @@ const Appproducts = ({ img,title,subtitle }) => {
   date =
     date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 
-    const photoImages = [photo1,photo3, photo2, photo4, photo5, photo6, photo7, photo8, photo9, photo10 ];
+    const photoImages = [photo1, photo3, photo2, photo4, photo5, photo6, photo7, photo8, photo9, photo10];
+    const socialImages = [social2, social3, social4, social6, social7, social5,social1];
+
 
     let images = [];
 
     if (title === "Photography") {
         images = photoImages;
     }
-    //else if (title === "App Two") {
-    //    images = imagesSet2;
-    //} else if (title === "App Three") {
+    else if (title === "Social Media Creatives") {
+        images = socialImages
+    }
+
+    //else if (title === "App Three") {
     //    images = imagesSet3;
     //} else {
     //    images = [photo1]; // default or fallback images
