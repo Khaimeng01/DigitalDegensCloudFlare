@@ -105,16 +105,6 @@ const Appproducts = ({ img,title,subtitle }) => {
                   </div>
               </div>
 
-              <div className="hidden md:flex flex-col gap-10 p-5 md:p-0">
-                  <div>
-                      <h1 className="text-3xl font-semibold text-gray-900">
-                          {title}
-                      </h1>
-                      <p className="mt-5 text-gray-600">
-                          {subtitle}
-                      </p>
-                  </div>
-              </div>
 
 
       </section>
