@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,Outlet } from "react-router-dom";
 import Home from "../src/components/Home";
 import AppDevelopment from "../src/services/AppDevelopment";
 import WebDevelopment from "../src/services/WebDevelopment";
@@ -33,7 +33,7 @@ const Routings = () => {
                 <Route path="/hireus" element={<Hireus />} />
 
                 {/* Portfolio Nested Routes */}
-                <Route path="/portfolio">
+                <Route path="/portfolio" element={<Outlet />}>
                     <Route path="photography" element={<ProductsTemp img={app1} title={'Photography'} subtitle={subTitle1} />} />
                     <Route path="product1" element={<ProductsTemp img={product1} />} />
                     <Route path="brand1" element={<ProductsTemp img={branding1} />} />
