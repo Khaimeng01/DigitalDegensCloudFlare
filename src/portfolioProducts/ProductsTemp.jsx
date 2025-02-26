@@ -64,6 +64,8 @@ const Appproducts = ({ title, subtitle }) => {
                                 className="object-cover w-full h-full rounded cursor-pointer"
                                 controls
                                 muted
+                                playsInline
+                                onLoadedMetadata={(e) => e.target.load()} // Forces a refresh
                             />
                         </div>
                     ))}
