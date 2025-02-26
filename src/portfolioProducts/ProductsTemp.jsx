@@ -64,8 +64,6 @@ const Appproducts = ({ title, subtitle }) => {
                                 className="object-cover w-full h-full rounded cursor-pointer"
                                 controls
                                 muted
-                                playsInline
-                                onLoadedMetadata={(e) => e.target.load()} // Forces a refresh
                             />
                         </div>
                     ))}
@@ -76,18 +74,30 @@ const Appproducts = ({ title, subtitle }) => {
     } else {
         const images = title === "Photography" ? photoImages : socialImages;
         content = (
-            <div className="md:w-2/3 w-full p-5 flex justify-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {images.map((imageSrc, index) => (
-                        <img
-                            key={index}
-                            src={imageSrc}
-                            className="object-cover w-full h-full rounded cursor-pointer"
-                            alt={`photo-${index}`}
-                        />
-                    ))}
+            <div className="flex flex-col md:flex-row items-start justify-center gap-10">
+                {/* Images Grid */}
+                <div className="md:w-2/3 w-full p-5 md:p-0 flex justify-center items-center">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        {images.map((imageSrc, index) => (
+                            <img
+                                key={index}
+                                src={imageSrc}
+                                className="object-cover w-full h-full rounded cursor-pointer"
+                                alt={`photo-${index}`}
+                            />
+                        ))}
+                    </div>
+                </div>
+
+                {/* Desktop Content Div (shown on desktop only) */}
+                <div className="hidden md:flex md:w-1/3 flex-col gap-10 p-5 md:p-0">
+                    <div>
+                        <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
+                        <p className="mt-5 text-gray-600">{subtitle}</p>
+                    </div>
                 </div>
             </div>
+
         );
     }
 
