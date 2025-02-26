@@ -36,6 +36,8 @@ import social5 from "../img/portfolio/Social5.jpeg";
 import social6 from "../img/portfolio/Social6.jpeg";
 import social7 from "../img/portfolio/Social7.jpeg";
 
+const vid1 = "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto1.png";
+
 const Appproducts = ({ title, subtitle }) => {
     const navigate = useNavigate();
     const { pathname } = useLocation();
@@ -64,6 +66,7 @@ const Appproducts = ({ title, subtitle }) => {
                                 className="object-cover w-full h-full rounded cursor-pointer"
                                 controls
                                 muted
+                                poster={vid1}
                             />
                         </div>
                     ))}
