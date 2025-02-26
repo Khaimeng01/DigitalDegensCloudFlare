@@ -36,7 +36,7 @@ import social5 from "../img/portfolio/Social5.jpeg";
 import social6 from "../img/portfolio/Social6.jpeg";
 import social7 from "../img/portfolio/Social7.jpeg";
 
-const vid1 = "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto1.png";
+
 
 const Appproducts = ({ title, subtitle }) => {
     const navigate = useNavigate();
@@ -53,6 +53,16 @@ const Appproducts = ({ title, subtitle }) => {
     const photoImages = [photo1, photo3, photo2, photo4, photo5, photo6, photo7, photo8, photo9, photo10];
     const socialImages = [social2, social3, social4, social6, social7, social5, social1];
 
+    const videoPosters = [
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto1.png",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto2.png",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto3.png",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto4.png",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto5.png",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto6.png",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto7.png"
+    ];
+
     let content = null;
 
     if (title === "Videography") {
@@ -66,7 +76,7 @@ const Appproducts = ({ title, subtitle }) => {
                                 className="object-cover w-full h-full rounded cursor-pointer"
                                 controls
                                 muted
-                                poster={vid1}
+                                poster={videoPosters[index]} // Assign correct poster to each video
                             />
                         </div>
                     ))}
@@ -92,13 +102,16 @@ const Appproducts = ({ title, subtitle }) => {
                     </div>
                 </div>
 
-                {/* Desktop Content Div (shown on desktop only) */}
-                <div className="hidden md:flex md:w-1/3 flex-col gap-10 p-5 md:p-0">
-                    <div>
-                        <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
-                        <p className="mt-5 text-gray-600">{subtitle}</p>
+                    <div className="hidden md:flex md:w-1/3 flex-col gap-10 p-5 md:p-0">
+                        <div>
+                            <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
+                            <p className="mt-5 text-gray-600">{subtitle}</p>
+                        </div>
                     </div>
-                </div>
+
+
+
+
             </div>
 
         );
@@ -120,11 +133,14 @@ const Appproducts = ({ title, subtitle }) => {
                     {/* Display either Videos or Images */}
                     {content}
 
-                    {/* DESKTOP VIEW - Title on Right */}
-                    {/*<div className="hidden md:flex md:w-1/3 flex-col gap-5 p-5">*/}
-                    {/*    <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>*/}
-                    {/*    <p className="mt-5 text-gray-600">{subtitle}</p>*/}
-                    {/*</div>*/}
+                    {(title === "Videography" ) && (
+                        < div className="hidden md:flex md:w-1/3 flex-col gap-5 p-5">
+                    <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
+                    <p className="mt-5 text-gray-600">{subtitle}</p>
+                </div>
+
+                    )}
+
                 </div>
             </section>
 
