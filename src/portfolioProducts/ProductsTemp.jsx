@@ -1,22 +1,21 @@
-import React, { useEffect } from "react";
-// import app3 from "../img/portfolio/app-2.jpg";
+import React, { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
-import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
-import CtaButton from "../components/CtaButton";
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import app1 from "../img/portfolio/1.jpg";
-import app2 from "../img/portfolio/app-2.jpg";
+import { useNavigate, useLocation } from "react-router-dom";
 
+// Cloudflare R2 Video URLs
+const r2VideoURLs = [
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video1.mp4",
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%202.mp4",
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%203.mp4",
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%204.mp4",
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%205.mp4",
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%206.mp4",
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%207.mp4"
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+];
 
-
-//Photo Imports
+// Photo Imports
 import photo1 from "../img/portfolio/Test.jpeg";
 import photo2 from "../img/portfolio/Photo_2.jpeg";
 import photo3 from "../img/portfolio/Photo3.jpeg";
@@ -28,173 +27,98 @@ import photo8 from "../img/portfolio/Photo8.jpeg";
 import photo9 from "../img/portfolio/Photo9.jpeg";
 import photo10 from "../img/portfolio/Photo10.jpeg";
 
-//Social Imports
+// Social Media Creatives
 import social1 from "../img/portfolio/Social1.jpeg";
-
-//dELTETE
 import social2 from "../img/portfolio/Social2.jpeg";
 import social3 from "../img/portfolio/Social3.jpeg";
-//dELETE
 import social4 from "../img/portfolio/Social4.jpeg";
-
 import social5 from "../img/portfolio/Social5.jpeg";
 import social6 from "../img/portfolio/Social6.jpeg";
 import social7 from "../img/portfolio/Social7.jpeg";
 
-
-
-
-const Appproducts = ({ img,title,subtitle }) => {
-
+const Appproducts = ({ title, subtitle }) => {
     const navigate = useNavigate();
     const { pathname } = useLocation();
+    const [selectedVideo, setSelectedVideo] = useState(null); // Modal for video
 
     useEffect(() => {
-        if (pathname === "/portfolio/photography" || pathname === "/portfolio/Videos" || pathname === "/portfolio/SocialMediaCreatives"  ) {
+        if (pathname.includes("/portfolio/")) {
             window.scrollTo(0, 0);
         }
     }, [pathname]);
 
-  let date = new Date();
-  date =
-    date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-
+    // Image Collections
     const photoImages = [photo1, photo3, photo2, photo4, photo5, photo6, photo7, photo8, photo9, photo10];
-    const socialImages = [social2, social3, social4, social6, social7, social5,social1];
+    const socialImages = [social2, social3, social4, social6, social7, social5, social1];
 
+    let content = null;
 
-    let images = [];
+    if (title === "Videography") {
+        content = (
+            <div className="md:w-2/3 w-full p-5 flex justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {r2VideoURLs.map((videoURL, index) => (
+                        <div key={index} className="relative h-[732px]"> {/* Set fixed height */}
+                            <video
+                                src={videoURL}
+                                className="object-cover w-full h-full rounded cursor-pointer"
+                                controls
+                                muted
+                            />
+                        </div>
+                    ))}
+                </div>
+            </div>
 
-    if (title === "Photography") {
-        images = photoImages;
+        );
+    } else {
+        const images = title === "Photography" ? photoImages : socialImages;
+        content = (
+            <div className="md:w-2/3 w-full p-5 flex justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {images.map((imageSrc, index) => (
+                        <img
+                            key={index}
+                            src={imageSrc}
+                            className="object-cover w-full h-full rounded cursor-pointer"
+                            alt={`photo-${index}`}
+                        />
+                    ))}
+                </div>
+            </div>
+        );
     }
-    else if (title === "Social Media Creatives") {
-        images = socialImages
-    }
 
-    //else if (title === "App Three") {
-    //    images = imagesSet3;
-    //} else {
-    //    images = [photo1]; // default or fallback images
-    //}
+    return (
+        <div>
+            <NavBar />
 
-  return (
-    <div>
-      <NavBar />
-      <section
-        id="about"
-        className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100"
-          >
+            {/* MOBILE VIEW - Title on Top */}
+            <div className="md:hidden flex flex-col gap-5 p-5">
+                <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
+                <p className="text-gray-600">{subtitle}</p>
+            </div>
 
-              <div className="md:hidden flex flex-col gap-10 p-5 md:p-0">
-                  <div>
-                      <h1 className="text-3xl font-semibold text-gray-900">
-                          {title}
-                      </h1>
-                      <p className="mt-5 text-gray-600">
-                          {subtitle}
-                      </p>
-                  </div>
-              </div>
+            <section id="about" className="w-full py-16 lg:px-32 border-b border-orange-100">
+                <div className="flex flex-col md:flex-row items-start justify-center gap-10">
 
-              <div className="flex flex-col md:flex-row items-start justify-center gap-10">
+                    {/* Display either Videos or Images */}
+                    {content}
 
-                  {/* Images Grid */}
-                  <div className="md:w-2/3 w-full p-5 md:p-0 flex justify-center items-center">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {images.map((imageSrc, index) => (
-                              <img
-                                  key={index}
-                                  src={imageSrc}
-                                  className="object-cover w-full h-full rounded cursor-pointer"
-                                  alt={`photo-${index}`}
-                              />
-                          ))}
-                      </div>
-                  </div>
+                    {/* DESKTOP VIEW - Title on Right */}
+                    <div className="hidden md:flex md:w-1/3 flex-col gap-5 p-5">
+                        <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
+                        <p className="mt-5 text-gray-600">{subtitle}</p>
+                    </div>
+                </div>
+            </section>
 
-                  {/* Desktop Content Div (shown on desktop only) */}
-                  <div className="hidden md:flex md:w-1/3 flex-col gap-10 p-5 md:p-0">
-                      <div>
-                          <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
-                          <p className="mt-5 text-gray-600">{subtitle}</p>
-                      </div>
-                  </div>
-              </div>
-
-
-
-      </section>
-
-      {/* Newletter & Footer */}
-      
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
-        <Footer />
-      </section>
-    </div>
-  );
+            {/* FOOTER */}
+            <section className="w-full py-16 lg:px-32 border-b border-orange-100">
+                <Footer />
+            </section>
+        </div>
+    );
 };
 
 export default Appproducts;
-
-
-{/*<Swiper*/ }
-{/*    modules={[Pagination, Autoplay, Navigation]}*/ }
-{/*    spaceBetween={10}*/ }
-{/*    slidesPerView={1}*/ }
-{/*    pagination={{ clickable: true }}*/ }
-{/*    autoplay={{ delay: 4000 }}*/ }
-{/*    navigation={false}*/ }
-{/*    className="rounded-lg overflow-hidden shadow-xl "*/ }
-{/*>*/ }
-{/*    {images.map((imageSrc, index) => (*/ }
-{/*        <SwiperSlide key={index} className="flex justify-center items-center">*/ }
-{/*            <img*/ }
-{/*                src={imageSrc}*/ }
-{/*                alt={`slide-${index}`}*/ }
-{/*                //className="object-cover w-fit h-[fit] md:h-[400]"*/ }
-{/*                className="object-contain w-full h-[350px] lg:h-[500px] py-1"*/ }
-{/*            />*/ }
-{/*        </SwiperSlide>*/ }
-{/*    ))}*/ }
-{/*</Swiper>*/ }
-
-
-{/*                <div className="md:w-1/3 flex flex-col gap-10 p-5 md:p-0">*/ }
-{/*<div className="shadow-xl border-2 p-8">*/ }
-{/*  <h1 className="text-3xl font-semibold text-[#7A6960]">*/ }
-{/*    Project Information*/ }
-{/*  </h1>*/ }
-{/*  <div className="h-[1px] mt-3 bg-slate-200"></div>*/ }
-{/*  <ul className="mt-3">*/ }
-{/*    <li>*/ }
-{/*      <span className="font-semibold ">Category:</span> Software*/ }
-{/*    </li>*/ }
-{/*    <li>*/ }
-{/*      <span className="font-semibold ">Client:</span> USA*/ }
-{/*    </li>*/ }
-{/*    <li>*/ }
-{/*      <span className="font-semibold ">Project Date:</span> {date}*/ }
-{/*    </li>*/ }
-{/*    <li>*/ }
-{/*      <span className="font-semibold ">Project Url:</span>{" "}*/ }
-{/*      <span className="text-orange-600">www.example.com</span>*/ }
-{/*    </li>*/ }
-{/*  </ul>*/ }
-{/*</div>*/ }
-{/*<div>*/ }
-{/*              <h1 className="text-3xl font-semibold text-gray-900">*/ }
-{/*                  {title}*/ }
-{/*  </h1>*/ }
-{/*              <p className="mt-5 text-gray-600">*/ }
-{/*                  {subtitle}*/ }
-{/*  </p>*/ }
-{/*          </div>*/ }
-
-
-{/*<div className="flex items-center justify-center mt-3">*/ }
-{/*  <Link to="/#contact" className="">*/ }
-{/*    <CtaButton name={"Hire Us"} />*/ }
-{/*  </Link>*/ }
-{/*</div>*/ }
-{/*          </div>*/ }

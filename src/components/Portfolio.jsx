@@ -54,8 +54,8 @@ const Portfolio = () => {
                       <PortfolioProduct image={SocialIcon} title={'Social Media Creatives'} />
           </div>
 
-                  <div onClick={() => navigate("portfolio/Videos")}>
-                      <PortfolioProduct image={VideosIcon} title={'Videos'} />
+                  <div onClick={() => navigate("portfolio/Videography")}>
+                      <PortfolioProduct image={VideosIcon} title={'Videography'} />
           </div>
         </div>
 
