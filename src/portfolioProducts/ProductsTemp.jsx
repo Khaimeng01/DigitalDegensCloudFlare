@@ -118,10 +118,10 @@ const Appproducts = ({ title, subtitle }) => {
                     {content}
 
                     {/* DESKTOP VIEW - Title on Right */}
-                    <div className="hidden md:flex md:w-1/3 flex-col gap-5 p-5">
-                        <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>
-                        <p className="mt-5 text-gray-600">{subtitle}</p>
-                    </div>
+                    {/*<div className="hidden md:flex md:w-1/3 flex-col gap-5 p-5">*/}
+                    {/*    <h1 className="text-3xl font-semibold text-gray-900">{title}</h1>*/}
+                    {/*    <p className="mt-5 text-gray-600">{subtitle}</p>*/}
+                    {/*</div>*/}
                 </div>
             </section>
 
