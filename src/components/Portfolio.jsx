@@ -59,35 +59,6 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* 2nd row */}
-        {/*<div data-aos="fade-left" className=" md:flex lg:-gap-6 gap-3 hidden">*/}
-        {/*  <div onClick={() => navigate("portfolio/book1")}>*/}
-        {/*    <PortfolioProduct image={book1} />*/}
-        {/*  </div>*/}
-
-        {/*  <div onClick={() => navigate("portfolio/app2")}>*/}
-        {/*    <PortfolioProduct image={app2} />*/}
-        {/*  </div>*/}
-
-        {/*  <div onClick={() => navigate("portfolio/book3")}>*/}
-        {/*    <PortfolioProduct image={book3} />*/}
-        {/*  </div>*/}
-        {/*</div>*/}
-
-        {/* 3rd row */}
-        {/*<div data-aos="fade-up" className="lg:-gap-6 gap-3 hidden md:flex">*/}
-        {/*<div onClick={() => navigate("portfolio/product3")}>*/}
-        {/*    <PortfolioProduct image={product3} />*/}
-        {/*  </div>*/}
-
-        {/*  <div onClick={() => navigate("portfolio/book2")}>*/}
-        {/*    <PortfolioProduct image={book2} />*/}
-        {/*  </div>*/}
-
-        {/*  <div onClick={() => navigate("portfolio/app3")}>*/}
-        {/*    <PortfolioProduct image={app3} />*/}
-        {/*  </div>*/}
-        {/*</div>*/}
       </div>
     </div>
   );
