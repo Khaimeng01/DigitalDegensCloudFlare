@@ -57,7 +57,7 @@ const Hero = () => {
                 </h1>
                 <p className="text-xl mt-5 text-gray-600 primary-font">
                     {/* <p className="text-xl mt-5 text-blue-gray-500 primary-font"> */}
-                    Digital Degens: Where Marketing, E-Commerce, and Education Converge to Drive Growth, Optimize Sales, and Build Future-Ready Brands.
+                    Digital Degens: Where marketing, e-commerce, and education converge to drive growth, optimize sales, and build future-ready brands.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center mb-12 lg:mb-0 lg:flex-row gap-10 mt-10">
 
