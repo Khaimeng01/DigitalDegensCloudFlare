@@ -56,7 +56,7 @@ const Appproducts = ({ title, subtitle }) => {
     const socialImages = [social2, social3, social4, social6, social7, social5, social1];
 
     const videoPosters = [
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%201.jpg",,
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%201.jpg",
         "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%202.jpg",
         "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%203.jpg",
         "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%204.jpg",
