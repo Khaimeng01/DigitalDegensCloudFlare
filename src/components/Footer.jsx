@@ -41,22 +41,22 @@ const Footer = () => {
                     Useful Links
                 </h1>
                 <ul>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <a href="#" className="text-zinc-700">
                             Home
                         </a>
                     </li>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <a href="/#about" className="text-zinc-700">
                             About Us
                         </a>
                     </li>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <a href="/#services" className="text-zinc-700">
                             Service
                         </a>
                     </li>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <a href="/#portfolio" className="text-zinc-700">
                             Portfolio
                         </a>
@@ -70,22 +70,22 @@ const Footer = () => {
                     Our Services
                 </h1>
                 <ul>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <Link  className="text-zinc-700">
                             Social Media Management
                         </Link>
                     </li>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <Link  className="text-zinc-700">
                             E-Commerce Training & Consultancy
                         </Link>
                     </li>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <Link  className="text-zinc-700">
                             Content Creation
                         </Link>
                     </li>
-                    <li className="mb-2 arrow">
+                    <li className="mb-2">
                         <Link  className="text-zinc-700">
                             Web Design & Development
                         </Link>
