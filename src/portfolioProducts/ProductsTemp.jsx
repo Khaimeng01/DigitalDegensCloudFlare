@@ -31,10 +31,19 @@ import photo10 from "../img/portfolio/Photo10.jpeg";
 import social1 from "../img/portfolio/Social1.jpeg";
 import social2 from "../img/portfolio/Social2.jpeg";
 import social3 from "../img/portfolio/Social3.jpeg";
-import social4 from "../img/portfolio/Social4.jpeg";
+import social4 from "../img/portfolio/SocialDesi.jpg";
 import social5 from "../img/portfolio/Social5.jpeg";
 import social6 from "../img/portfolio/Social6.jpeg";
 import social7 from "../img/portfolio/Social7.jpeg";
+
+import social8 from "../img/portfolio/Social8.jpg";
+import social9 from "../img/portfolio/Social9.jpg";
+import socialCousin from "../img/portfolio/SocialCousin.jpg";
+import social10 from "../img/portfolio/SocialMojjito.jpg";
+import socialAzure from "../img/portfolio/SocialAzure.jpg";
+
+
+
 
 import thumb1 from "../img/portfolio/Thum1.jpg";
 
@@ -53,7 +62,7 @@ const Appproducts = ({ title, subtitle }) => {
 
     // Image Collections
     const photoImages = [photo1, photo3, photo2, photo4, photo5, photo6, photo7, photo8, photo9, photo10];
-    const socialImages = [social2, social3, social4, social6, social7, social5, social1];
+    const socialImages = [social8, social9, social2, socialCousin, social10, social3, social4, social6];
 
     const videoPosters = [
         "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%201.jpg",
