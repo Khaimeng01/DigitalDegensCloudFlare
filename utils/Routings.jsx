@@ -20,8 +20,8 @@ import Hireus from "../src/services/Hireus";
 const Routings = () => {
 
     const subTitle1 = "A picture speaks a thousand words, and we make sure yours tell the right story. Whether it's event or product photography, food styling, corporate branding, or lifestyle shots, our high-quality images bring your brand to life and leave a lasting impression.";
-    const subTitle2 = "Social media is all about grabbing attention - and we create visuals that stop the scroll. From eye-catching Instagram ads to engaging carousels and bold infographics, our creatives are designed to captivate, inform, and drive action.";
-    const subTitle3 = "Videos that tell stories, drive engagement, and convert viewers into customers. From high-energy event promos to sleek product showcases and brand storytelling, our videography captures the essence of your business with stunning visuals and dynamic edits.";
+    const subTitle2 = "Social media is all about grabbing attention - and we create visuals that stop the scroll. From eye-catching social media ads to engaging carousels and bold infographics, our creatives are designed to captivate, inform, and drive action.";
+    const subTitle3 = "Videos that tell compelling stories, drive engagement, and convert viewers into customers. From high-energy event promos and sleek product showcases to impactful brand storytelling, we blend professional videography with dynamic social media content and e-commerce-specific videos. Whether you need cinematic commercials, engaging reels, or conversion-focused product demos, our expert team ensures every frame captures the essence of your brand with stunning visuals and seamless editing.";
 
 
     return (
