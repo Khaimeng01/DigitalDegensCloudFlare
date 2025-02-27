@@ -36,6 +36,8 @@ import social5 from "../img/portfolio/Social5.jpeg";
 import social6 from "../img/portfolio/Social6.jpeg";
 import social7 from "../img/portfolio/Social7.jpeg";
 
+import thumb1 from "../img/portfolio/Thum1.jpg";
+
 
 
 const Appproducts = ({ title, subtitle }) => {
@@ -54,13 +56,14 @@ const Appproducts = ({ title, subtitle }) => {
     const socialImages = [social2, social3, social4, social6, social7, social5, social1];
 
     const videoPosters = [
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto1.png",
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto2.png",
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto3.png",
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto4.png",
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto5.png",
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto6.png",
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/CoverPhoto7.png"
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%201.jpg",,
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%202.jpg",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%203.jpg",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%204.jpg",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%205.jpg",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%206.jpg",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%207.jpg"
+
     ];
 
     let content = null;

@@ -43,7 +43,9 @@ const Services = () => {
                 {/* Row 1 */}
                 <Card img={<HiOutlineChartPie />} title="Social Media Management" desc="We handle your brand's social media presence, creating strategies that boost engagement, increase followers, and drive real results." />
 
-                <Card img={<HiOutlineChartPie />} title="E-Commerce Training & Consultancy" desc="Master online selling with expert guidance on e-commerce platforms, helping you optimize, scale, and maximize profits." />
+                <Card img={<HiOutlineChartPie />} title="E-Commerce Training & Consultancy"
+                    desc="We help you master online selling with expert guidance on e-commerce platforms, optimizing your strategy to scale and maximize profits."
+                />
 
                 <Card img={<HiOutlineChartPie />} title="Content Creation" desc="We help you master online selling with expert guidance on e-commerce platforms, optimizing your strategy to scale and maximize profits." />
 

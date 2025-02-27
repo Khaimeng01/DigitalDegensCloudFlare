@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import app1 from "../img/portfolio/app-1.jpg";
+import app1 from "../img/portfolio/Cover3.png";
 import app2 from "../img/portfolio/app-2.jpg";
 import app3 from "../img/portfolio/app-3.jpg";
 import product1 from "../img/portfolio/product-1.jpg";
@@ -9,8 +9,8 @@ import book1 from "../img/portfolio/books-1.jpg";
 import book2 from "../img/portfolio/books-2.jpg";
 import book3 from "../img/portfolio/books-3.jpg";
 import photoIcon from "../img/portfolio/Photography.png";
-import SocialIcon from "../img/portfolio/Social Media Creatives.png";
-import VideosIcon from "../img/portfolio/Videos.png";
+import SocialIcon from "../img/portfolio/Cover1.png";
+import VideosIcon from "../img/portfolio/Cover2.png";
 import photoShootIcon from "../img/portfolio/photoshoot.jpg";
 
 
