@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Card = ({ title, desc, img}) => {
   return (
     // <a href={url}>
-      <div className="bg-white lg:min-w-3/12  lg:min-h-[515px] h-fit p-10 rounded mx-5 lg:m-0 hover:text-orange-600  cursor-pointer shadow-2xl"
+      <div className="bg-white lg:min-w-3/12  lg:min-h-[350px] h-fit p-10 rounded mx-5 lg:m-0 hover:text-orange-600  cursor-pointer shadow-2xl"
 >
           <div style={{ color: "#60A5FA", fontSize: "36px" }}>{img}</div>
 
