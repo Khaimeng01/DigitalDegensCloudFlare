@@ -62,6 +62,11 @@ const Footer = () => {
                         </a>
                     </li>
                     <li className="mb-2">
+                        <a href="/#team" className="text-zinc-700">
+                            Team
+                        </a>
+                    </li>
+                    <li className="mb-2">
                         <a href="/#contact" className="text-zinc-700">
                             Contact Us
                         </a>

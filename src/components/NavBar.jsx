@@ -74,6 +74,14 @@ const NavBar = () => {
         </a>
 
         <a
+            href="/#team"
+            className="text-white hover:text-blue-400 text-lg tracking-wide font-light"
+        >
+            Team
+        </a>
+
+
+        <a
           href="/#contact"
           className="text-white hover:text-blue-400 text-lg tracking-wide font-light"
           >
@@ -123,6 +131,13 @@ const NavBar = () => {
                       className="text-white hover:text-blue-400 text-lg tracking-wide font-light"
                   >
                       Portfolio
+                  </a>
+
+                  <a
+                      href="/#team"
+                      className="text-white hover:text-blue-400 text-lg tracking-wide font-light"
+                  >
+                      Team
                   </a>
           <a
             href="/#contact"
