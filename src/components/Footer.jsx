@@ -61,6 +61,11 @@ const Footer = () => {
                             Portfolio
                         </a>
                     </li>
+                    <li className="mb-2">
+                        <a href="/#contact" className="text-zinc-700">
+                            Contact Us
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -87,7 +92,19 @@ const Footer = () => {
                     </li>
                     <li className="mb-2">
                         <Link  className="text-zinc-700">
+                            Photography
+                        </Link>
+                    </li>
+
+                    <li className="mb-2">
+                        <Link className="text-zinc-700">
                             Web Design & Development
+                        </Link>
+                    </li>
+
+                    <li className="mb-2">
+                        <Link className="text-zinc-700">
+                            Videography
                         </Link>
                     </li>
                     
