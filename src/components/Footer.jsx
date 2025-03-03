@@ -53,7 +53,7 @@ const Footer = () => {
                     </li>
                     <li className="mb-2">
                         <a href="/#services" className="text-zinc-700">
-                            Service
+                            Services
                         </a>
                     </li>
                     <li className="mb-2">
