@@ -11,8 +11,8 @@ const r2VideoURLs = [
     "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%204.mp4",
     "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%205.mp4",
     "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%206.mp4",
-    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%207.mp4"
-
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Video%207.mp4",
+    "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Bga%20video%20final.mp4"
 ];
 
 // Photo Imports
@@ -33,7 +33,8 @@ import social2 from "../img/portfolio/Social2.jpeg";
 import social3 from "../img/portfolio/Social3.jpeg";
 import social4 from "../img/portfolio/SocialDesi.jpg";
 import social5 from "../img/portfolio/Social5.jpeg";
-import social6 from "../img/portfolio/Social6.jpeg";
+
+import social6 from "../img/portfolio/9.png";
 import social7 from "../img/portfolio/Social7.jpeg";
 
 import social8 from "../img/portfolio/Social8.jpg";
@@ -71,8 +72,8 @@ const Appproducts = ({ title, subtitle }) => {
         "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%204.jpg",
         "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%205.jpg",
         "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%206.jpg",
-        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%207.jpg"
-
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%207.jpg",
+        "https://pub-1c372dfb59a8404ba551b6c71f8ba311.r2.dev/Thumbnail%20VID%208.jpg"
     ];
 
     let content = null;
