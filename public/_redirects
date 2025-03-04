@@ -1,1 +1,3 @@
-/*    /index.html   200
+/assets/*  /assets/:splat  200
+https://digitaldegensmy.com/* https://digitaldegensmy.com/:splat 301!
+/*  /index.html  200
