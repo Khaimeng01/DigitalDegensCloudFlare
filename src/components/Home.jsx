@@ -31,7 +31,7 @@ const Home = () => {
         <div className="container min-w-full min-h-lvh secondary-font">
             <NavBar />
             {/* <section className="w-full max-h-fit pt-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100"> */}
-            <section className="w-full max-h-fit pt-16 lg:px-32 overflow-hidden bg-[#E2E2E2] border-b border-blue-100">
+            <section className="w-full max-h-fit  lg:pl-32 overflow-hidden bg-[#E2E2E2] border-b border-blue-100">
                 <Hero />
             </section>
 

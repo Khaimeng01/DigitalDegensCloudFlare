@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import CtaButton from "./CtaButton";
 import VideoBtn from "./VideoBtn";
 import img from "../img/Test3.png";
+import img2 from "../img/Logo3.jpg";
+
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 
@@ -50,7 +52,7 @@ const Hero = () => {
             <div
                 data-aos="fade-right"
                 data-aos-duration="1200"
-                className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0"
+                className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0 pt-5 lg:pt-0"
             >
                 <h1 className="text-gray-900 md:text-5xl text-3xl font-semibold">
                     Empowering Businesses to Thrive Online
@@ -98,9 +100,9 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0">
+      <div className="lg:w-1/2 w-full flex items-center justify-center bg-black py-16">
                 {/* <img ref={myElement} className="w-full " src={img} alt="img" /> */}
-                <img className="w-full " src={img} alt="img" />
+                <img className="w-full " src={img2} alt="img" />
 
             </div>
 
