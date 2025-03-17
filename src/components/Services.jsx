@@ -33,11 +33,9 @@ const Services = () => {
             </div>
 
             <p className="text-gray-700 text-center mt-7 mb-10 text-lg px-4">
-We help businesses grow, engage, and convert their audience through strategic social media management, impactful content creation, and expert e-commerce consultancy.            </p>
+                We help businesses grow, engage, and convert their audience through strategic social media management, impactful content creation, and expert e-commerce consultancy.            </p>
 
-            {/* <p className="text-gray-700 text-justify mt-7 mb-10 text-lg">
-  We help businesses scale, engage, and convert through expert social media management, high-impact content creation, and e-commerce training & consultancy.
-</p> */}
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {/* Row 1 */}
                 <Card img={<HiOutlineChartPie />} title="Social Media Management"
