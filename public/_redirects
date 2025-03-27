@@ -1,1 +1,3 @@
-/*            /index.html   200
+/assets/*  /assets/:splat
+/static/*  /static/:splat
+/*         /index.html  200
