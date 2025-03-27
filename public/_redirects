@@ -1,5 +1,1 @@
-/assets/*     /assets/:splat
-/static/*     /static/:splat
-/favicon.ico  /favicon.ico
-/index.html   /index.html
 /*            /index.html   200
